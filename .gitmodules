@@ -1,0 +1,3 @@
+[submodule "kernel-wasm-runtime"]
+	path = kernel-wasm-runtime
+	url = https://github.com/Faisal-Saleh/kernel-wasm-runtime.git

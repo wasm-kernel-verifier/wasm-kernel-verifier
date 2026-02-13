@@ -1,0 +1,14 @@
+#cloud-config
+users:
+  - name: devuser
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+package_update: true
+packages:
+  - build-essential
+  - git
+  - curl
+  - wget
+  - ca-certificates
+runcmd:
+  - [ sh, -lc, "mkdir -p /home/devuser/wkv && chown -R devuser:devuser /home/devuser/wkv" ]
